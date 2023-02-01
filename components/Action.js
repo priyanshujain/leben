@@ -71,7 +71,9 @@ const TodoItem = ({ todo, updateTodo, disabled }) => {
 						>
 							Last Updated:{" "}
 							{disabled
-								? moment(new Date(todo.lastUpdated)).format("MMM Do YYYY, h:mm a")
+								? moment(new Date(todo.lastUpdated)).format(
+										"MMM Do YYYY, h:mm a"
+								  )
 								: moment(new Date(todo.lastUpdated)).format(
 										"h:mm a"
 								  )}

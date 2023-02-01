@@ -6,55 +6,53 @@ https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318
 */
 
 @font-face {
-  font-family: 'Graphik';
-  src: url("Graphik-Regular-Web.eot");
-  src: url("Graphik-Regular-Web.eot?#iefix") format("embedded-opentype"),
-    url("Graphik-Regular-Web.woff2") format("woff2"),
-    url("Graphik-Regular-Web.woff") format("woff"),
-    url("Graphik-Regular-Web.ttf") format("truetype");
+	font-family: "Graphik";
+	src: url("Graphik-Regular-Web.eot");
+	src: url("Graphik-Regular-Web.eot?#iefix") format("embedded-opentype"),
+		url("Graphik-Regular-Web.woff2") format("woff2"),
+		url("Graphik-Regular-Web.woff") format("woff"),
+		url("Graphik-Regular-Web.ttf") format("truetype");
 }
 @font-face {
-  font-style: italic;
-  font-weight: normal;
-  font-family: 'Graphik';
-  src: url("Graphik-RegularItalic-Web.eot");
-  src: url("Graphik-RegularItalic-Web.eot?#iefix") format("embedded-opentype"),
-    url("Graphik-RegularItalic-Web.woff2") format("woff2"),
-    url("Graphik-RegularItalic-Web.woff") format("woff"),
-    url("Graphik-RegularItalic-Web.ttf") format("truetype");
+	font-style: italic;
+	font-weight: normal;
+	font-family: "Graphik";
+	src: url("Graphik-RegularItalic-Web.eot");
+	src: url("Graphik-RegularItalic-Web.eot?#iefix") format("embedded-opentype"),
+		url("Graphik-RegularItalic-Web.woff2") format("woff2"),
+		url("Graphik-RegularItalic-Web.woff") format("woff"),
+		url("Graphik-RegularItalic-Web.ttf") format("truetype");
 }
 @font-face {
-  font-weight: 500;
-  font-style: normal;
-  font-family: 'Graphik';
-  src: url("Graphik-Medium-Web.eot");
-  src: url("Graphik-Medium-Web.eot?#iefix") format("embedded-opentype"),
-    url("Graphik-Medium-Web.woff2") format("woff2"),
-    url("Graphik-Medium-Web.woff") format("woff"),
-    url("Graphik-Medium-Web.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+	font-family: "Graphik";
+	src: url("Graphik-Medium-Web.eot");
+	src: url("Graphik-Medium-Web.eot?#iefix") format("embedded-opentype"),
+		url("Graphik-Medium-Web.woff2") format("woff2"),
+		url("Graphik-Medium-Web.woff") format("woff"),
+		url("Graphik-Medium-Web.ttf") format("truetype");
 }
 
+@font-face {
+	font-weight: 700;
+	font-style: normal;
+	font-family: "Graphik";
+	src: url("Graphik-Bold-Web.eot");
+	src: url("Graphik-Bold-Web.eot?#iefix") format("embedded-opentype"),
+		url("Graphik-Bold-Web.woff2") format("woff2"),
+		url("Graphik-Bold-Web.woff") format("woff"),
+		url("Graphik-Bold-Web.ttf") format("truetype");
+}
 
 @font-face {
-  font-weight: 700;
-  font-style: normal;
-  font-family: 'Graphik';
-  src: url("Graphik-Bold-Web.eot");
-  src: url("Graphik-Bold-Web.eot?#iefix") format("embedded-opentype"),
-    url("Graphik-Bold-Web.woff2") format("woff2"),
-    url("Graphik-Bold-Web.woff") format("woff"),
-    url("Graphik-Bold-Web.ttf") format("truetype");
-  }
-
-
-@font-face {
-  font-weight: 900;
-  font-style: normal;
-  font-family: 'Graphik';
-  src: url("Graphik-Black-Web.eot");
-  src: url("Graphik-Black-Web.eot?#iefix") format("embedded-opentype"),
-  url("Graphik-Black-Web.woff2") format("woff2"),
-  url("Graphik-Black-Web.woff") format("woff"),
-  url("Graphik-Black-Web.ttf") format("truetype"),
-  url("Graphik-Black-Web.svg#Graphik-Black-Web") format("svg");
+	font-weight: 900;
+	font-style: normal;
+	font-family: "Graphik";
+	src: url("Graphik-Black-Web.eot");
+	src: url("Graphik-Black-Web.eot?#iefix") format("embedded-opentype"),
+		url("Graphik-Black-Web.woff2") format("woff2"),
+		url("Graphik-Black-Web.woff") format("woff"),
+		url("Graphik-Black-Web.ttf") format("truetype"),
+		url("Graphik-Black-Web.svg#Graphik-Black-Web") format("svg");
 }

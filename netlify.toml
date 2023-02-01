@@ -2,3 +2,7 @@
   from = "/service-worker.js"
   to = "/static/service-worker.js"
   status = 200
+
+
+[[plugins]]
+package = "@netlify/plugin-nextjs"

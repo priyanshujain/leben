@@ -37,7 +37,9 @@ const ActionHome = () => {
 				direction="column"
 			>
 				<div style={{ ...styles.paper }}>
-					<h2 style={{fontWeight: 500, fontSize: "24px"}}>{moment().format("ddd, Do MMM")}</h2>
+					<h2 style={{ fontWeight: 500, fontSize: "24px" }}>
+						{moment().format("ddd, Do MMM")}
+					</h2>
 					<p
 						style={{
 							marginTop: "5px",
@@ -72,11 +74,9 @@ const ActionHome = () => {
 							</Button>
 						</div>
 					) : null}
-					{
-						data && data.tasks && data.tasks.length > 0 ? (
-							<ActionList data={data} />
-						) : null
-					}
+					{data && data.tasks && data.tasks.length > 0 ? (
+						<ActionList data={data} />
+					) : null}
 				</div>
 			</Grid>
 		</main>

@@ -4,9 +4,10 @@ import Grid from "@mui/material/Grid";
 import TodoItem from "./Action";
 import { setLatestData } from "../utils/storage";
 import theme from "../src/theme";
-import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
-import { styled } from '@mui/material/styles';
-
+import LinearProgress, {
+	linearProgressClasses,
+} from "@mui/material/LinearProgress";
+import { styled } from "@mui/material/styles";
 
 const styles = {
 	todo: {
@@ -32,13 +33,14 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
 	borderRadius: 5,
 	margin: "0 20px",
 	[`&.${linearProgressClasses.colorPrimary}`]: {
-	  backgroundColor: theme.palette.grey[theme.palette.mode === 'light' ? 200 : 800],
+		backgroundColor:
+			theme.palette.grey[theme.palette.mode === "light" ? 200 : 800],
 	},
 	[`& .${linearProgressClasses.bar}`]: {
-	  borderRadius: 5,
-	  backgroundColor: theme.palette.primary.main,
+		borderRadius: 5,
+		backgroundColor: theme.palette.primary.main,
 	},
-  }));
+}));
 
 const Todo = ({ data }) => {
 	const initialState = data["tasks"].map((key) => {
@@ -61,7 +63,7 @@ const Todo = ({ data }) => {
 	const completedTodos = todos.filter((todo) => todo.completed === true);
 	const pendingTodos = todos.filter((todo) => todo.completed !== true);
 	const completedNum = completedTodos.length;
-	const perCompleted = completedNum*100/todos.length;
+	const perCompleted = (completedNum * 100) / todos.length;
 
 	return (
 		<Grid
@@ -70,31 +72,33 @@ const Todo = ({ data }) => {
 			justify="center"
 			direction="column"
 		>
-			<div
-			>
-			<p
-			style={{
-				textAlign: "left",
-				marginLeft: "20px",
-				marginBottom: "20px",
-				fontSize: "20px",
-			}}
-			>{`Today's progress`}</p>
-			<BorderLinearProgress variant="determinate" value={perCompleted} />
-			<p
-			style={{
-				textAlign: "right",
-				marginRight: "20px",
-			}}
-			>{`${parseInt(perCompleted)}% goals completed for today`}</p>
+			<div>
+				<p
+					style={{
+						textAlign: "left",
+						marginLeft: "20px",
+						marginBottom: "20px",
+						fontSize: "20px",
+					}}
+				>{`Today's progress`}</p>
+				<BorderLinearProgress
+					variant="determinate"
+					value={perCompleted}
+				/>
+				<p
+					style={{
+						textAlign: "right",
+						marginRight: "20px",
+					}}
+				>{`${parseInt(perCompleted)}% goals completed for today`}</p>
 			</div>
 			<p
-			style={{
-				textAlign: "left",
-				marginLeft: "20px",
-				marginBottom: "0px",
-				marginTop: "20px",
-			}}
+				style={{
+					textAlign: "left",
+					marginLeft: "20px",
+					marginBottom: "0px",
+					marginTop: "20px",
+				}}
 			>{`Pending (${pendingTodos.length})`}</p>
 			<div style={{ ...styles.paper }}>
 				<ul style={{ ...styles.list }}>
@@ -109,12 +113,12 @@ const Todo = ({ data }) => {
 				</ul>
 			</div>
 			<p
-			style={{
-				textAlign: "left",
-				marginLeft: "20px",
-				marginBottom: "0px",
-				marginTop: "20px",
-			}}
+				style={{
+					textAlign: "left",
+					marginLeft: "20px",
+					marginBottom: "0px",
+					marginTop: "20px",
+				}}
 			>{`Completed (${completedNum})`}</p>
 			<div style={{ ...styles.paper }}>
 				<ul style={{ ...styles.list }}>

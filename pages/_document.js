@@ -11,7 +11,7 @@ class MyDocument extends Document {
 					<meta name="theme-color" content="#16463F" />
 					<meta
 						name="Description"
-						content="an example of NextJS app with 100% accessible lighthouse score"
+						content="A simplified habit tracking app."
 					/>
 					<link rel="manifest" href="static/manifest.json" />
 					<link
@@ -174,13 +174,9 @@ class MyDocument extends Document {
 						href="static/img/apple-splash-1136-640.jpg"
 						media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
 					/>
-
-					<link
-						rel="stylesheet"
-						href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-					/>
 				</Head>
 				<body>
+					<script src="https://apis.google.com/js/api.js"></script>
 					<Main />
 					<NextScript />
 				</body>
