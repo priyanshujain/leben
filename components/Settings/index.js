@@ -44,6 +44,7 @@ const Settings = () => {
 	const [settings, setSettings] = useState(initialState);
 	const [open, setOpen] = useState(false);
 	const [startTime, setStartTime] = useState(initialState.dayStartTime);
+	const [endTime, setEndTime] = useState(initialState.dayEndTime);
 
 	const handleSave = () => {
 		if (settings != getSettingsData()) {
@@ -67,6 +68,16 @@ const Settings = () => {
 		};
 		setStartTime(newStartTime);
 		settings.dayStartTime = newStartTime;
+		setSettings(settings);
+	};
+
+	const handleEndTimeChange = (newValue) => {
+		let newEndTime = {
+			hours: newValue.hour(),
+			minutes: newValue.minute(),
+		};
+		setEndTime(newEndTime);
+		settings.dayEndTime = newEndTime;
 		setSettings(settings);
 	};
 
@@ -107,6 +118,25 @@ const Settings = () => {
 								)}
 							/>
 						</LocalizationProvider>
+
+						<div
+							style={{
+								marginTop: "32px",
+							}}
+						>
+							<LocalizationProvider dateAdapter={AdapterDayjs}>
+								<TimePicker
+									label="Wind Up Time"
+									value={dayjs()
+										.hour(endTime.hours)
+										.minute(endTime.minutes)}
+									onChange={handleEndTimeChange}
+									renderInput={(params) => (
+										<TextField {...params} />
+									)}
+								/>
+							</LocalizationProvider>
+						</div>
 
 						<div style={{ ...styles.action }}>
 							<Button

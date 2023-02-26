@@ -10,9 +10,6 @@ import Base from "./Base";
 import dayjs from "dayjs";
 import { getSettingsData } from "../utils/storage";
 
-var advancedFormat = require("dayjs/plugin/advancedFormat");
-dayjs.extend(advancedFormat);
-
 const styles = {
 	todo: {
 		maxWidth: 480,
